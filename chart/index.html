@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alumuko/vanilla-datetimerange-picker@latest/dist/vanilla-datetimerange-picker.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <!-- DISPLAY THE CHART -->
+    <div id="cryptoChart">
+        <div class="search-record" id="searchrecord">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 172 172" style=" fill:#26e07f;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#1fb141"><path d="M21.5,21.5v129h64.5v-32.25v-64.5v-32.25zM86,53.75c0,17.7805 14.4695,32.25 32.25,32.25c17.7805,0 32.25,-14.4695 32.25,-32.25c0,-17.7805 -14.4695,-32.25 -32.25,-32.25c-17.7805,0 -32.25,14.4695 -32.25,32.25zM118.25,86c-17.7805,0 -32.25,14.4695 -32.25,32.25c0,17.7805 14.4695,32.25 32.25,32.25c17.7805,0 32.25,-14.4695 32.25,-32.25c0,-17.7805 -14.4695,-32.25 -32.25,-32.25z"></path></g></g></svg>
+        </div>
+        <div class="record-field flatpickr" id="pickrecord">
+            <div class="set-panel">
+                <label for="gorecords" id="recordpanel" title="Records">
+                    <select id="getSelectedRecords" name="gorecords" title="Get Records"></select>
+                </label>
+            </div>
+            <label id="recordlabel" hidden>
+                <input type="text" id="datetimerecord" title="Search record" placeholder="YYYY-MM-DD HH:MM:SS">
+            </label>
+        </div>
+    </div>
+    <!-- DISPLAY THE CHART -->
+
+    <!-- JS Extensions -->
+    <script src="https://unpkg.com/lightweight-charts@3.4.0/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alumuko/vanilla-datetimerange-picker@latest/dist/vanilla-datetimerange-picker.js"></script>
+    <script src="./src/map.js"></script>
+    <script src="./src/Uint8ArrayToStringsTransformer.js"></script>
+    <script src="./src/chart-stream.js"></script>
+    <!-- JS Extensions -->
+    
+</body>
+</html>
